@@ -1,8 +1,8 @@
 # Export Microsoft Group Members to CSV
 
 Grab **every member** of a Microsoft 365 / Entra group from
-`myaccount.microsoft.com/groups/...` and save them to a spreadsheet (CSV) —
-Name, UPN, Email, Type — even when there are thousands of them.
+`myaccount.microsoft.com/groups/...` and save them to a spreadsheet (CSV):
+Name, UPN, Email, Type, even when there are thousands of them.
 
 **Nothing to install. No terminal.** You paste one snippet into your browser
 while you're signed in, and a CSV downloads.
@@ -53,7 +53,7 @@ saves it as a CSV. It's read-only and nothing leaves your computer.
 
 ## If the count comes up short
 
-If the box says you captured fewer rows than the total, just **run it again** —
+If the box says you captured fewer rows than the total, just **run it again**:
 paste the snippet a second time. Slow connections sometimes render a few rows
 lazily; a second pass picks up stragglers. Each run produces its own CSV.
 

@@ -1,5 +1,5 @@
 /* ===========================================================================
- * Microsoft "My Groups" member exporter  —  paste-into-console tool
+ * Microsoft "My Groups" member exporter: paste-into-console tool
  * ---------------------------------------------------------------------------
  * Exports the ENTIRE members table of a Microsoft 365 / Entra group
  * (myaccount.microsoft.com/groups/<id> -> Members tab) to a CSV file,
@@ -14,7 +14,7 @@
  *   the row's UPN + Email), until it reaches the bottom. Then it builds a CSV
  *   and downloads it.
  *
- * HOW TO RUN  (no install, nothing to set up — see README.md for screenshots)
+ * HOW TO RUN  (no install, nothing to set up. see README.md for screenshots)
  *   1. Open the group's Members tab in Chrome or Edge, signed in normally.
  *      You should see the table (Name | UPN | Email | Type) and a line like
  *      "Showing N items total."
@@ -27,7 +27,7 @@
  *      folder. Done.
  *
  * It is READ-ONLY. It only reads what's on the page and scrolls. It changes
- * nothing in the group and sends nothing anywhere — the CSV is built in your
+ * nothing in the group and sends nothing anywhere. The CSV is built in your
  * browser and saved straight to your computer.
  * ========================================================================= */
 
@@ -208,7 +208,7 @@
 
   const shortfall = total && rows.length < total ? total - rows.length : 0;
   setMsg(
-    `<b style="color:#6bd16b">Done — ${rows.length.toLocaleString()} rows</b><br>` +
+    `<b style="color:#6bd16b">Done: ${rows.length.toLocaleString()} rows</b><br>` +
     `Saved <b>${fname}</b> to Downloads.` +
     (shortfall
       ? `<br><span style="color:#ffd27a">Got ${rows.length.toLocaleString()} of ${total.toLocaleString()}. ` +
