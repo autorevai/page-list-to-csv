@@ -2,7 +2,7 @@
 
 Grab **every member** of a Microsoft 365 / Entra group from
 `myaccount.microsoft.com/groups/...` and save them to a spreadsheet (CSV) —
-Name, UPN, Email, Type — even when there are 11,000+ of them.
+Name, UPN, Email, Type — even when there are thousands of them.
 
 **Nothing to install. No terminal.** You paste one snippet into your browser
 while you're signed in, and a CSV downloads.
@@ -22,7 +22,7 @@ saves it as a CSV. It's read-only and nothing leaves your computer.
 ## How to run it (Chrome or Edge)
 
 1. **Sign in and open the group's Members tab.** You should see the table
-   (Name / UPN / Email / Type) and a line like **"Showing 11703 items total."**
+   (Name / UPN / Email / Type) and a line like **"Showing N items total."**
 
    > **If the Members tab is blank**, you're signed into the wrong account.
    > The group only shows for someone in *that group's organization*. Switch to
@@ -38,10 +38,10 @@ saves it as a CSV. It's read-only and nothing leaves your computer.
    **whole file**, paste it into the console, and press **Enter**.
 
 5. **Wait.** A small dark box in the top-right shows progress
-   (`Captured 3,450 / 11,703 …`). Keep the tab in front and don't scroll the
-   table yourself. For ~11,700 rows it takes a few minutes.
+   (`Captured 1,200 / 5,000 …`). Keep the tab in front and don't scroll the
+   table yourself. For a few thousand rows it takes a couple of minutes.
 
-6. **Done.** A file like `group-members-11703-rows-2026-06-29.csv` lands in your
+6. **Done.** A file like `group-members-5000-rows-2026-06-29.csv` lands in your
    **Downloads** folder. Open it in Excel or Google Sheets.
 
 ---

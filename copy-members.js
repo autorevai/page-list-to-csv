@@ -8,7 +8,7 @@
  * as you scroll, so there's no built-in "export all").
  *
  * HOW IT WORKS
- *   The page never loads all 11,000+ rows at once, so you can't just read them
+ *   The page never loads all the rows at once, so you can't just read them
  *   in one shot. This scrolls the table down a little at a time and grabs
  *   whatever rows are on screen, keeping a de-duplicated running list (keyed on
  *   the row's UPN + Email), until it reaches the bottom. Then it builds a CSV
@@ -17,7 +17,7 @@
  * HOW TO RUN  (no install, nothing to set up — see README.md for screenshots)
  *   1. Open the group's Members tab in Chrome or Edge, signed in normally.
  *      You should see the table (Name | UPN | Email | Type) and a line like
- *      "Showing 11703 items total."
+ *      "Showing N items total."
  *   2. Press F12 to open Developer Tools, click the "Console" tab.
  *   3. If the console warns about pasting code, type   allow pasting   and
  *      press Enter (one time only).
@@ -99,7 +99,7 @@
     return out;
   }
 
-  // detect "Showing 11703 items total" so we can show progress + a final check
+  // detect "Showing N items total" so we can show progress + a final check
   function detectTotal() {
     const m = norm(document.body.innerText).match(/Showing\s+([\d,]+)\s+items?\s+total/i);
     return m ? parseInt(m[1].replace(/,/g, ''), 10) : null;
